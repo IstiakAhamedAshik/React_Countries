@@ -33,7 +33,14 @@ function App() {
     )
     setFiltercountries(getnewCountry)
   }
-  const searchCountry = () => {}
+  const searchCountry = (findName) => {
+    const value = findName.toLowerCase()
+    const getCountry = countries.filter((country) => {
+      const newCountry = country.name.common.toLowerCase()
+      return newCountry.startsWith(value)
+    })
+    setFiltercountries(getCountry)
+  }
 
   return (
     <div>

@@ -28,3 +28,21 @@
   padding: 10px;
   font-weight: bold;
 }
+@media screen and (max-width: 968px) {
+  .all-countries {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 668px) {
+  .all-countries {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .all-countries {
+    grid-template-columns: auto;
+    grid-gap: 10px;
+  }
+}

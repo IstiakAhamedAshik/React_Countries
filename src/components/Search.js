@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './country.css'
 
 const Search = (props) => {
+  const [searchtext, setSearchtext] = useState('')
   const findcountry = (e) => {
-    const findName = e.target.value
-    props.searchCountry(findName)
+    setSearchtext(e.target.value)
   }
+
+  useEffect(() => {
+    props.searchCountry(searchtext)
+  }, [searchtext])
   return (
     <div style={{ textAlign: 'center' }}>
       <input
