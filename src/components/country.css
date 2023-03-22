@@ -1,0 +1,24 @@
+.all-countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.single-country {
+  border: 1px solid blue;
+  padding: 15px;
+  text-align: center;
+  background-color: darkslategray;
+}
+.info-country {
+  background-color: cadetblue;
+}
+.btn {
+  padding: 6px;
+  color: crimson;
+  border-style: none;
+  background-color: bisque;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+}
